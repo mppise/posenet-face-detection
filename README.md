@@ -17,7 +17,7 @@ Because **PoseNet Face Detection** leverages TensorflowJS and PoseNet model to i
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
 
 <!-- Finally, also include`face-detection.js` -->
-<script src="https://cdn.jsdelivr.net/gh/mppise/posenet-face-detection/face-detection.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mppise/posenet-face-detection/dist/main.js"></script>
 ```
 
 Once the packages are imported, 

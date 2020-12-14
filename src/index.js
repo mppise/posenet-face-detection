@@ -1,6 +1,7 @@
 import * as tf from "@tensorflow/tfjs";
 import * as posenet from "@tensorflow-models/posenet";
 
+
 /**
  * Detects multiple faces from an image. Pass optional parameters to control accuracy and maximum number of faces.
  * @param {ImageData} imageDataURL Image
@@ -88,11 +89,8 @@ const detectFaces = (imageDataURL, options) => {
             }).catch((err) => reject(err));
         }); // tidy
     }); // promise
-
 } // detectFaces
 
 
-/**
- * Exports
- */
-export { detectFaces };
+// ************ EXPORTS *************
+module.exports = detectFaces;

@@ -1,5 +1,5 @@
-import * as tf from "@tensorflow/tfjs";
-import * as posenet from "@tensorflow-models/posenet";
+// import * as tf from "@tensorflow/tfjs";
+// import * as posenet from "@tensorflow-models/posenet";
 
 /**
  * Detects multiple faces from an image. Pass optional parameters to control accuracy and maximum number of faces.
@@ -9,7 +9,7 @@ import * as posenet from "@tensorflow-models/posenet";
  * @param {number} options.maxFaces Returns a maximum of specified number of faces. Faces returned based on highest accuracy. (default: 10)
  * @returns {Promise} Promise contains an array of ImageData along with score. 
  */
-exports.detectFaces = (imageDataURL, options) => {
+function detectFaces (imageDataURL, options) {
     // -- Default options -- //
     let opts = {
         "accuracy": 0.2,

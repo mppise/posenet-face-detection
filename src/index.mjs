@@ -10,7 +10,7 @@ import * as posenet from "@tensorflow-models/posenet";
  * @param {number} options.maxFaces Returns a maximum of specified number of faces. Faces returned based on highest accuracy. (default: 10)
  * @returns {Promise} Promise contains an array of ImageData along with score. 
  */
-function detectFaces (imageDataURL, options) {
+exports.detectFaces = (imageDataURL, options) => {
     // -- Default options -- //
     let opts = {
         "accuracy": 0.2,
@@ -90,7 +90,3 @@ function detectFaces (imageDataURL, options) {
         }); // tidy
     }); // promise
 } // detectFaces
-
-
-// ************ EXPORTS *************
-export { detectFaces };

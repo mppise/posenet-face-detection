@@ -2,13 +2,14 @@
   "name": "posenet-face-detection",
   "version": "1.1.0",
   "description": "Detect multiple faces within a group photo. Powered by PoseNet model from tfjs-models (TensorflowJS).",
+  "main": "dist/index.bundle.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mppise/posenet-face-detection.git"
+    "url": "https://github.com/mppise/posenet-face-detection"
   },
   "keywords": [
     "tensorflowjs",

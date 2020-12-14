@@ -1,20 +1,16 @@
 const path = require('path');
 
 module.exports = {
-  entry: {
-    index: {
-      import: './src/index.js'
-    }
-  },
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js',
+    filename: 'main.js',
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -27,9 +23,6 @@ module.exports = {
     ]
   },
   optimization: {
-    minimize: true,
-    splitChunks: {
-      chunks: 'all'
-    }
-  },
+    minimize: false
+  }
 };

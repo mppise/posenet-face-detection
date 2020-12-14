@@ -1,6 +1,6 @@
 {
   "name": "posenet-face-detection",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Detect multiple faces within a group photo. Powered by PoseNet model from tfjs-models (TensorflowJS).",
   "main": "dist/index.bundle.js",
   "scripts": {

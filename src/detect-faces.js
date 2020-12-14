@@ -1,7 +1,6 @@
 import * as tf from "@tensorflow/tfjs";
 import * as posenet from "@tensorflow-models/posenet";
 
-
 /**
  * Detects multiple faces from an image. Pass optional parameters to control accuracy and maximum number of faces.
  * @param {ImageData} imageDataURL Image

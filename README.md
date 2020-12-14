@@ -17,7 +17,7 @@ Because **PoseNet Face Detection** leverages TensorflowJS and PoseNet model to i
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
 
 <!-- Finally, also include`face-detection.js` -->
-<script src="https://cdn.jsdelivr.net/gh/mppise/posenet-face-detection/dist/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mppise/posenet-face-detection/src/index.js"></script>
 ```
 
 Once the packages are imported, 
@@ -81,4 +81,3 @@ Clone this repository and run `index.html` within the `demo/` directory.
 ### References:
 - [Pose Detection in the Browser: PoseNet Model](https://github.com/tensorflow/tfjs-models/tree/master/posenet)
 - [Real-time Human Pose Estimation in the Browser with TensorFlow.js](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5)
-
